@@ -1,0 +1,13 @@
+{
+  "name": "samadhansetu-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SamadhanSetu (समाधानसेतु) - SIH 2026",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "node backend/server.js",
+    "seed": "node backend/seed.js",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend"
+  }
+}
